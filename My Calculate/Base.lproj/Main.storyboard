@@ -58,6 +58,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.7879307928614584" green="0.7863459616784878" blue="0.96716370558375631" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ztN-kF-StY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,6 +79,10 @@
                             <constraint firstItem="krL-7J-Wyd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="xt1-Lm-g84"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="box1" destination="krL-7J-Wyd" id="WFE-dt-Gwa"/>
+                        <outlet property="box2" destination="hiU-bt-O2f" id="hFI-sH-39o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

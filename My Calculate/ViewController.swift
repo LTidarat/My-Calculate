@@ -9,6 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //Implict
+    var intNumber1 = 0
+    var intNumber2: Int = 0
+    var strNumber1 = ""
+    var strNumber2: String = ""
+    
+    
+    @IBOutlet weak var box1: UITextField!
+    
+    @IBOutlet weak var box2: UITextField!
+    
+    @IBAction func answer(_ sender: Any) {
+        
+       
+        strNumber1 = box1.text!
+        strNumber2 = box2.text!
+        
+        //Show Log
+        print("strNumber1 ==> \(strNumber1)")
+        print("strNumber2 ==> \(strNumber2)")
+        
+        
+    }//answerButton
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
