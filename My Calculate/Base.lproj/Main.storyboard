@@ -80,6 +80,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="answerLabel" destination="ENj-Hh-gS6" id="dEC-kq-3WD"/>
                         <outlet property="box1" destination="krL-7J-Wyd" id="WFE-dt-Gwa"/>
                         <outlet property="box2" destination="hiU-bt-O2f" id="hFI-sH-39o"/>
                     </connections>

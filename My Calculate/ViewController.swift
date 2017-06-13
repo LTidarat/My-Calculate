@@ -10,20 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //Implict
+    //Implict for Integer
     var intNumber1 = 0
     var intNumber2: Int = 0
+    var intAnswer: Int = 0
+    
+    //Implicit for String
     var strNumber1 = ""
     var strNumber2: String = ""
+    var strAnswer: String = ""
     
+   //Initial View to Outlet
+    @IBOutlet weak var answerLabel: UILabel!
     
     @IBOutlet weak var box1: UITextField!
     
     @IBOutlet weak var box2: UITextField!
     
-    @IBAction func answer(_ sender: Any) {
+    
+    //Initial View to Action
+    @IBAction func answer(_ sender: Any)
+    
+    {
         
-       
         strNumber1 = box1.text!
         strNumber2 = box2.text!
         
@@ -38,6 +47,9 @@ class ViewController: UIViewController {
         print("intNumber1 ==> \(intNumber1)")
         print("intNumber2 ==> \(intNumber2)")
         
+        //Calculate
+        intAnswer = intNumber1 + intNumber2
+        print("intAnswer \(intAnswer)")
         
     }//answerButton
     
